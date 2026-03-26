@@ -17,7 +17,7 @@ import ipfsRoutes from './routes/ipfs';
 import hsmRoutes from './routes/hsm';
 import { mpcRoutes } from './routes/mpc';
 import { privacyBudgetRoutes } from './routes/privacy-budget';
-import { encryptedUploadRoutes } from './routes/encrypted-upload';
+main
 import { errorHandler } from './middleware/errorHandler';
 import { requestLogger } from './middleware/requestLogger';
 import { privacyMiddleware } from './middleware/privacy';
@@ -97,7 +97,6 @@ apiRouter.use('/query', queryRoutes);
 apiRouter.use('/ipfs', ipfsRoutes);
 apiRouter.use('/hsm', hsmRoutes);
 apiRouter.use('/mpc', mpcRoutes);
-apiRouter.use('/upload', encryptedUploadRoutes);
 
 app.use('/api/v1', apiRouter);
 
